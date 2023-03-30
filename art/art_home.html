@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing:border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.header {
+        background-image: url("https://t3.ftcdn.net/jpg/04/26/52/48/360_F_426524847_C412TCi1U48D8HdNVYfNgbrFSqmC9MIB.jpg");
+        background-size: cover; /* adjust as necessary */
+        background-position: center center; /* adjust as necessary */
+        color: #3C2A21; /* set text color to contrast with background */
+        
+      }
+ .logo img {
+  height: 150px; /* Set the height of your logo */
+  width: 150px; /* Set the width of your logo */
+}
+ .container1{
+	padding: 64px;
+	background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7oLQbKOG8X8c3m-24w8Va3X9fRx6WwtgAMOuqCFT39J5gKMRB_hN0-GFh2swQ6FZ2D4s&usqp=CAU");
+    background-size: cover; /* adjust as necessary */
+    background-position: center center; /* adjust as necessary */
+    font-weight: bold;
+    margin:5px;
+}
+.container2 {
+  padding: 64px;
+  background-image: url("https://d3rf6j5nx5r04a.cloudfront.net/T9HUUBUi0DhvouSx9hVvrfxZZSM=/1120x0/product/5/3/63773657dfed4919a0348b7253d252cc_opt.jpg");
+        background-size: cover; /* adjust as necessary */
+        background-position: center center; /* adjust as necessary */
+        font-weight: bold;
+         margin:5px;
+}
+.container3 {
+  padding: 64px;
+  background-image: url("https://cdn.dribbble.com/users/32512/screenshots/17444529/crystal_spherical_color_loop_clear_2.png?compress=1&resize=400x300&vertical=top");
+  /* adjust as necessary */
+  background-position: center center; /* adjust as necessary */
+  font-weight: bold;
+   margin:5px;
+  
+}
+.container4 {
+  padding: 64px;
+  background-image: url("https://www.intermiles.com/_next/image?url=https%3A%2F%2Fwww.intermilesresources.com%2F%2Fiwov-resources%2Fimages%2Fblog%2FMarch2022%2F10-famous-stone-and-rock-indian-sculptures%2FCover580x580.jpg&w=3840&q=75");
+        background-size: cover;/* adjust as necessary */
+        background-position: center center; /* adjust as necessary */
+        font-weight: bold;
+         margin:5px;
+}
+.container5 {
+  padding: 64px;
+  background-image: url("https://www.eikowa.com/wp-content/uploads/2019/11/WhatsApp-Image-2022-02-26-at-1.27.58-PM-1024x609.jpeg");
+    
+        background-size: cover; /* adjust as necessary */
+        background-position: center center; /* adjust as necessary */
+        font-weight: bold;
+         margin:5px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both
+}
+
+.column-66 {
+  float: left;
+  width: 66.66666%;
+  padding: 20px;
+}
+
+.column-33 {
+  float: left;
+  width: 33.33333%;
+  padding: 20px;
+}
+
+.large-font {
+  font-size: 32px;
+}
+
+.xlarge-font {
+  font-size: 64px
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #04AA6D;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+img:hover {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 0.5s;
+
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+@media screen and (max-width: 1000px) {
+  .column-66,
+  .column-33 {
+    width: 100%;
+    text-align: center;
+  }
+  img {
+    margin: auto;
+  }
+}
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+* {
+  box-sizing: border-box;
+}
+.content{
+	padding: 10px;
+ 	margin: 5px;
+ 	/*background-color: rgba(255, 255, 255, 0.8);*/
+ 	background-image: url("https://static.vecteezy.com/system/resources/thumbnails/008/058/793/small/abstract-blur-with-bokeh-light-for-background-usage-vector.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center; 
+ 	font-family: Arial, sans-serif;
+ 	color:#16213E;
+ 	}
+
+
+</style>
+</head>
+<body>
+ <div class="header">
+ 
+ <h1 class="xlarge-font" style="text-align:center">INDIAN ART</h1>
+			<p  style="text-align:center; font-size:24px; color:#262A56; font-family: Helvetica Neue; "><b>(“India is a place where colour is doubly bright. Pinks that scald your eyes, blues you could drown in.” – Kiran Millwood Hargrave)</b></p>
+			<div class="dropdown">
+				<!-- <button onclick="myFunction()">Dropdown</button>-->
+				<div class="dropdown-content" id="myDropdown">
+					<a href="#">Link 1</a>
+					<a href="#">Link 2</a>
+					<a href="#">Link 3</a>
+				</div>
+			</div>
+	</div>
+	<div class="navbar">
+  <a href="#home">Home</a>
+  <a href="#news">News</a>
+  <div class="dropdown">
+    <button class="dropbtn"> Architecture </button>
+    <div class="dropdown-content">
+      <a href="https://www.incredibleindia.org/content/incredibleindia/en/experiences/heritage/architectural-marvels.html">Architecture Marvel of India</a>
+      <a href="https://in.musafir.com/blog/architectural-wonders-of-india">Architecture Wonders</a>
+      <a href="https://edition.cnn.com/style/article/famous-buildings-india/index.html">Famous Buildings</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Timeline </button>
+    <div class="dropdown-content">
+      <a href="https://www.theartist.me/art-movement/indian-art/">Art History Movements</a>
+      
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Sculpture</button>
+    <div class="dropdown-content">
+      <a href="https://www.britannica.com/art/Indian-sculpture">Types of sculpture</a>
+      <a href="https://prepp.in/news/e-492-indian-sculpture-art-and-culture-notes">Sculptures of various ages</a>
+      <a href="https://www.artzolo.com/blog/famous-historic-sculptures-indian-subcontinent">Famous Historic Sculptures</a>
+      
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Art Forms</button>
+    <div class="dropdown-content">
+      <a href="#https://indianfolkart.org/52-indian-art-and-culture/">52 art forms</a>
+      
+    </div>
+  </div>
+</div>
+
+<div class="content">
+	<h2 style="text-align:center;font-family: Helvetica Neue, Helvetica, Arial; font-size:24px " >“Art is the activity by which a person, having experienced an emotion, intentionally transmits it to others” – Leo Tolstoy</h2>
+	<h4 style="font-size:20px "> Various art forms, such as painting, sculpture, pottery, and fibre arts like woven silk, are all part of the diverse body of work known as Indian art. Geographically, it includes all of the modern-day countries of India, Pakistan, Bangladesh, Sri Lanka, Nepal, and occasionally eastern Afghanistan. In both its traditional and modern manifestations, Indian art exhibits a powerful sense of design.</h4>
+	
+	<h4 style="font-size:20px ">Indian art dates back to villages made during the third millennium BCE, during the prehistoric era. Hinduism, Buddhism, Jainism, Sikhism, and Islam are just a few of the religions that have influenced Indian art on its path to the contemporary era. The major religious groups have typically shared the 
+	dominant artistic style at any time and location, despite this complex blending of religious traditions.<br/><br/>
+	In terms of historical art, religious sculpture made of stone and metal has fared the best in terms of climate resistance in India, leaving behind the majority of the finest artefacts. The surrounding, drier areas, rather than India itself, are where many of the most significant ancient discoveries that are not
+	 in carved stone can be found. The grave items that are the primary source of ancient art in other cultures are not included in Indian funeral and philosophical customs.
+	 <br/><br/>
+	 Indian artist styles historically followed Indian religions out of the subcontinent, having an especially large influence in Tibet, South East Asia and China. Indian art has itself received influences at times, especially 
+	 from Central Asia and Iran, and Europe.</h4>
+</div>
+
+<!-- The history Section -->
+<div class="container1" >
+  <div class="row">
+    <div class="column-66" >
+      <h1 class="xlarge-font"><b>The Indian Art History</b></h1>
+      <h1 class="large-font" style="color:MediumSeaGreen;"><b>The Timeline </b></h1>
+      <p><span style="font-size:24px">Get to know how it started.<br/></span ><span style="font-size:21px"> Art has been present in India for millennia and has evolved through religious, cultural, and political change. The area ascribed to Indian Art includes modern-day India, Pakistan, and Bangladesh.</span></p>
+      <button class="button">Learn more<a href="#"></a></button>
+    </div>
+    <div class="column-33">
+        <img src="D:\Screenshots\art_history.jpg" width="4035" height="4071">
+    </div>
+  </div>
+</div>
+
+<!-- importance Section -->
+<div class="container2" style="background-color:#f1f1f1">
+  <div class="row">
+    <div class="column-33">
+      <img src="https://www.theartist.me/wp-content/uploads/2015/07/Dancing-girl-of-Mohenjo-Daro.jpg" alt="Dancing-girl-of-Mohenjo-Daro" width="335" height="471">
+    </div>
+    <div class="column-66">
+      <h1 class="xlarge-font" style="color:FFD369;"><b>It's Historical Importance</b></h1>
+      <h1 class="large-font" style="color:#192965;"><b>The oldest Indian art is in its rock art which is comprised of iron oxide cave paintings, figurines and carvings.</b></h1>
+      <p style="color:#251B37;"><span style="font-size:24px">“Dancing girl is about fifteen years old I should think, not more, but she stands there with bangles all the way up her arm and nothing else on. A girl perfectly, for the moment, perfectly confident of herself and the world. There’s nothing like her, I think, in the world.”  – Mortimer Wheeler.<br/> </span> <span style="font-size:21px"> Paintings depict scenes of hunting and daily life and include stone tools and weapons and show people with animals, including a man riding a horse.</span></p>
+      <button class="button" style="background-color:#192965;">Read More</button>
+    </div>
+  </div>
+</div>
+
+<!-- The kala Section -->
+<div class="container3">
+  <div class="row">
+    <div class="column-66">
+      <h1 class="xlarge-font" style="color:#13005A;"><b>Indian Kalas</b></h1>
+      <h1 class="large-font" ><b>Traditional 64 Kalas</b></h1>
+      	<p style="">
+      		<span style="font-size:24px">
+      			Also known as "performing art" in sanskrit
+      			<br />
+      		</span><span style="font-size:21px">
+      		In Hindu scripture, Shiva is the master of Kalā. In the
+      		Lalita Sahasranama, the Devi is invoked as an embodiment
+      		of the 64 fine arts.</span>
+      	</p>
+      <button class="button" style="background-color:#071E3D">Learn More</button>
+   	</div>
+    <div class="column-33">
+        <img src="D:\Screenshots\64_klaas.jpg" width="4005" height="8005" >
+    </div>
+  </div>
+</div>
+
+<!-- the sculpture section -->
+<div class="container4" style="background-color:#f1f1f1">
+  <div class="row">
+    <div class="column-33">
+      <img src="D:\Screenshots\sculpture.jpg" alt="sculptures" width="4035" height="4071">
+    </div>
+    <div class="column-66">
+      <h1 class="xlarge-font" style="color:white;" ><b>Indian Sculptures</b></h1>
+      <h1 class="large-font" style="color:#FFF5E1;" ><b>Indian sculpture, the sculptural traditions, forms, and styles of the civilizations of the Indian subcontinent.</b></h1>
+      <p style="color:white;" ><span style="font-size:24px">Sculpture on the Indian subcontinent </span> <span style="font-size:21px"> mostly consists of stone, metal, or terracotta sculpture, partially due to the Indian subcontinent's climate, which makes long-term survival of organic materials problematic.</span></p>
+      <button class="button" style="background-color:#B8621B">Read More</button>
+    </div>
+  </div>
+</div>
+<!-- The art styles Section -->
+<div class="container5">
+  <div class="row">
+    <div class="column-66">
+      <h1 class="xlarge-font" style="color:white;"><b>Famous Indian Art Styles</b></h1>
+      <h1 class="large-font" style="color:#FFD700;"><b>Indian Folk ART And CRAFT</b></h1>
+      	<p style="color:white;">
+      		<span style="font-size:24px">
+      			Indian painting styles are not just a contemplation of the primeval lifestyle but a perfect example of artistic expression through simple yet distinct compositions.
+      			<br />
+      		</span><span style="font-size:21px">There are 52 indian folk art forms that we must protect in indian art and culture. Among them, 10 are most popular indian art styles.
+      		</span>
+      	</p>
+      <button class="button" style="background-color:#FFD700">Learn More</button>
+   	</div>
+    <div class="column-33">
+        <img src="D:\Screenshots\art_styles.jpg" width="4005" height="8005" >
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>
+      
