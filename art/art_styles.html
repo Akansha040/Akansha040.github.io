@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Different Indian Art Styles</title>
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7, .bgimg-8, .bgimg-9, .bgimg-10{
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("https://png.pngtree.com/background/20210712/original/pngtree-modern-double-color-futuristic-neon-background-picture-image_1181573.jpg");
+  min-height: 20%;
+  }
+
+.bgimg-2 {
+  background-image: url("https://rooftopapp.com/wp-content/uploads/2022/05/Madhubani-Painting-2.jpg");
+  min-height: 400px;
+}
+
+.bgimg-3 {
+   background-image: url("https://tourdefarm.in/wp-content/uploads/2021/01/Warli-Painting-1.jpg");
+  min-height: 400px;
+}
+
+.bgimg-4 {
+  background-image: url("https://vanda-production-assets.s3.amazonaws.com/2019/05/31/09/55/12/d1d4501b-f685-498e-9584-e84ff9c7bea0/contemporary.jpg");
+  
+  min-height: 400px;
+}
+
+.bgimg-5 {
+   background-image: url("https://cdn11.bigcommerce.com/s-x49po/images/stencil/500x659/products/90320/159046/1672045337522_20210913_115907__40003.1672056068.jpg?c=2");
+  min-height: 400px;
+  }
+
+.bgimg-6 {
+  background-image: url("https://i.etsystatic.com/10944158/r/il/b4393a/4206025043/il_600x600.4206025043_mje7.jpg");
+  min-height: 400px;
+}
+
+.bgimg-7 {
+   background-image: url("https://www.artzolo.com/sites/default/files/event/gond.jpg");
+  min-height: 400px;
+}
+
+.bgimg-8 {
+   background-image: url("https://cdn11.bigcommerce.com/s-x49po/images/stencil/500x659/products/71854/106538/1625723339477_soul_of_Kerala_title-01__98670.1625742796.jpg?c=2");
+  min-height: 400px;
+}
+
+.bgimg-9 {
+  background-image: url("https://cdn.shopify.com/s/files/1/0582/4007/3878/files/Patachitra-Art-Dancing-Krishna.jpg?v=1635751576");
+  min-height: 400px;
+}
+
+.bgimg-10 {
+  background-image: url("https://www.artzolo.com/sites/default/files/styles/product_full/public/uploads/multi/3905/largest/72x48.jpg");
+  min-height: 400px;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+  }
+}
+
+.header {
+        background-image: url("https://t3.ftcdn.net/jpg/04/26/52/48/360_F_426524847_C412TCi1U48D8HdNVYfNgbrFSqmC9MIB.jpg");
+        background-size: cover; /* adjust as necessary */
+        background-position: center center; /* adjust as necessary */
+        color: #3C2A21; /* set text color to contrast with background */
+        
+      }
+ 
+.large-font {
+  font-size: 32px;
+}
+
+.xlarge-font {
+  font-size: 64px
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #04AA6D;
+}
+
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+* {
+  box-sizing: border-box;
+}
+</style>
+</head>
+<body>
+<div class="header">
+ 
+ <h1 class="xlarge-font" style="text-align:center">INDIAN ART</h1>
+			<p  style="text-align:center; font-size:24px; color:#262A56; font-family: Helvetica Neue; "><b>( India is a place where colour is doubly bright. Pinks that scald your eyes, blues you could drown in. - Kiran Millwood Hargrave)</b></p>
+			<div class="dropdown">
+				<!-- <button onclick="myFunction()">Dropdown</button>-->
+				<div class="dropdown-content" id="myDropdown">
+					<a href="#">Link 1</a>
+					<a href="#">Link 2</a>
+					<a href="#">Link 3</a>
+				</div>
+			</div>
+	</div>
+	<div class="navbar">
+  <a href="#home">Home</a>
+  <a href="#news">News</a>
+  <div class="dropdown">
+    <button class="dropbtn">Famous Architecture </button>
+    <div class="dropdown-content">
+      <a href="https://www.incredibleindia.org/content/incredibleindia/en/experiences/heritage/architectural-marvels.html">Architecture Marvel of India</a>
+      <a href="https://in.musafir.com/blog/architectural-wonders-of-india">Architecture Wonders</a>
+      <a href="https://edition.cnn.com/style/article/famous-buildings-india/index.html">Famous Buildings</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Timeline </button>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Sculpture</button>
+    <div class="dropdown-content">
+      <a href="https://www.britannica.com/art/Indian-sculpture">Types of sculpture</a>
+      <a href="https://prepp.in/news/e-492-indian-sculpture-art-and-culture-notes">Sculptures of various ages</a>
+      <a href="https://www.artzolo.com/blog/famous-historic-sculptures-indian-subcontinent">Famous Historic Sculptures</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Art Forms</button>
+    <div class="dropdown-content">
+      <a href="#https://indianfolkart.org/52-indian-art-and-culture/">52 art forms</a>
+    </div>
+  </div>
+</div>
+
+
+<div class="bgimg-1">
+  <div class="caption">
+  <span class="border">10 most famous art styles</span>
+  </div>
+</div>
+<div class="bgimg-2">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">Madhubani Painting</span>
+  </div>
+</div>
+<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+  <h3 style="text-align:center;"><b>Madhubani Painting</b></h3>
+  <p>Madhubani paintings are India's most famous folk painting style; they are a type of wall art that originated in the Mithila area of Bihar. This captivating art style never ceases to amaze with its beautiful illustrations on the exposed inner walls of Bihar's houses. Madhubani paintings are an excellent illustration of artistic expression and an evocative depiction of culture and traditions. The designs create flawlessly distinct geometrical patterns, mythological scenes, and symbolic images. Madhubani stands out from other art styles due to its perfect blend of bright vibrant colours and distinct patterns. Madhubani artworks are classified into five styles: Katchni, Tantrik, Bharni, Khobar, and Godna. Lalita Devi and Bua Devi are Madhubani artwork National Award winners from India.</p>
+</div>
+
+<div class="bgimg-3">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">Warli Painting</span>
+  </div>
+</div>
+
+
+<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+  <h3 style="text-align:center;"><b>Warli Painting</b></h3>
+  <p>Warli is a 2500-year-old traditional painting style from Maharashtra majorly practiced in Thane and Nashik region. Warli paintings depict the tribe's natural and social traditions. Warli paintings also depict everyday life situations of that community's residents, such as dancing, farming, hunting, and praying. Local women used twigs to create beautiful, lively designs with rice paste on mud walls to communicate harvest or wedding celebration vibes. Jivya Soma Mashe is a Padma Shri awardee for her traditional indigenous Indian artwork.</p>
+  </div>
+
+<div class="bgimg-4">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">Kalighat Painting</span>
+  </div>
+</div>
+<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+  <h3 style="text-align:center;"><b>Kalighat Painting</b></h3>
+  <p>The Kalighat painting was found in the mid-nineteenth century at Calcutta's Kali Temple. A community known as "patuas" created these paintings and sketches on paper. A captivating Kalighat painting portrays scenes of daily life and mythological deities. Artists in Kalighat use earthy Indian hues such as indigo, ochre, Indian red, grey, blue, and white. Anwar Chitrakar is an Indian National Award laureate for his Kalighat artworks.</p>
+</div>
+
+<div class="bgimg-5">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">Phad Painting</span>
+  </div>
+</div>
+<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+  <h3 style="text-align:center;"><b>Phad Painting</b></h3>
+  <p>Phad is a traditional Rajasthani scroll painting from India that depicts tales of local deities, heroic figures from combat, adventure stories, and legendary romantic stories on horizontal cloth scrolls in red, yellow, and bright orange hues. Phad Painting brilliantly depicts multiple tales in a single composition while retaining the aesthetics of artistic expression. Shri. Shantilal Joshi is a National award-winning artist who created these exquisite Phad paintings and artworks.</p>
+</div>
+
+<div class="bgimg-6">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">Miniature Painting</span>
+  </div>
+</div>
+<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+  <h3 style="text-align:center;"><b>Miniature Painting</b></h3>
+  <p>Miniature painting is a Mughal-influenced art form that was introduced in India during the 16th century and changed the character of Indian art. Miniature paintings incorporate aspects from Islamic, Persian, and Indian cultures. These artworks are made entirely of natural minerals, precious stones, conch shells, gold, and silver. Throughout India, the miniature style painting has evolved into separate schools of miniature painting such as Kangra, Rajasthan, Malwa, Pahadi, Mughal, Deccan, and so on. Gopal Prasad Sharma is an Indian artist who has won a National prize for his miniature style artwork.</p>
+</div>
+
+<div class="bgimg-7">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">Gond Painting</span>
+  </div>
+</div>
+<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+  <h3 style="text-align:center;"><b>Gond Painting</b></h3>
+  <p>The Gondi tribe of central India created Gond paintings, which are a sequence of arranged dots and dashes. With rich detailing and vibrant colors, the tribes used to recreate some famous epic mythological tales of history to traditional songs and rituals. Historically, the colours used in gond paintings were taken from natural sources such as cow dung, plant sap, charcoal, coloured soil, mud, flowers, and leaves, among others. With the passage of time, Gond art has progressed beyond its status as an indigenous art form. For this Gond style artwork, Bhajju Shyam is a National prize winning artist from Madhya Pradesh.</p>
+</div>
+
+<div class="bgimg-8">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">Kerala Murals</span>
+  </div>
+</div>
+<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+  <h3 style="text-align:center;"><b>Kerala Murals</b></h3>
+  <p>Kerala mural paintings are a one-of-a-kind art form with profound spiritual origins, depicting themes from Hindu mythologies, epics from bygone eras, classic Krishna tales, and mystic forms of Shiva and Shakti. These traditional painting styles feature bold strokes and vibrant colours. In Kerala mural art, white, ochre-red, bluish-green, yellow-ochre, and pure colours are commonly used. Achutan Ramchandran Nair was awarded the Padma Bhushan for his outstanding addition to the art world through his Mural artwork.</p>
+</div>
+
+<div class="bgimg-9">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">Patachitra Painting</span>
+  </div>
+</div>
+<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+  <h3 style="text-align:center;"><b>Patachitra Painting</b></h3>
+  <p>Patachitra is an Odisha traditional art style. Patachitra paintings are mostly based on mythological and religious subjects and are beautifully executed with bold, strong outlines, bright colours such as white, red, yellow, and black, and decorative borders.  This artwork is admired by art lovers all over the world, and Sharat Kumar Sahu, a National Award-winning Patachitra artist who has traced this traditional artform worldwide, is the artist who created it.</p>
+</div>
+
+<div class="bgimg-10">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">Pichwai Painting</span>
+  </div>
+</div>
+<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+  <h3 style="text-align:center;"><b>Pichwai Painting</b></h3>
+  <p>Picchwai artwork, which recounts Lord Krishna's stories, was created as wall hangings behind the main deity in Krishna temples in Nathdwara. Picchwais are the most colourful and intricate works, with meaning hidden within the artistic motifs. This classified devotional art practise has been handed down from generation to generation and is an excellent example of spirituality in art. Kalyan Mal Sahu received a national award in 2011 for his outstanding service to Pichwai art.</p>
+</div>
+
+</body>
+</html>
